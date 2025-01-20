@@ -12,13 +12,13 @@
             background-color: #f0f0f0;
         }
         header {
-            background-color: #007bff;
+            background-color: #169b62;
             color: white;
             padding: 1em;
             text-align: center;
         }
         nav {
-            background-color: #0056b3;
+            background-color: #ffa500;
             padding: 0.5em;
             text-align: center;
         }
@@ -31,21 +31,28 @@
         main {
             padding: 2em;
         }
+        section {
+            margin-bottom: 2em;
+            background-color: white;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
         .button {
             display: inline-block;
             padding: 0.5em 1em;
             margin: 1em 0;
-            background-color: #007bff;
+            background-color: #ff4b00;
             color: white;
             text-decoration: none;
             border-radius: 4px;
             text-align: center;
         }
         .button:hover {
-            background-color: #0056b3;
+            background-color: #cc3a00;
         }
         footer {
-            background-color: #007bff;
+            background-color: #ff4b00;
             color: white;
             text-align: center;
             padding: 1em 0;
@@ -57,21 +64,37 @@
 </head>
 <body>
     <header>
-        <h1>¡Bienvenido a mi blog!</h1>
+        <h1>¡Bienvenido a mi blog sobre el Clima en Irlanda!</h1>
     </header>
     <nav>
-        <a href="#climate">Climate</a>
-        <a href="#seasons">Seasons</a>
-        <a href="#forecast">Forecast</a>
+        <a href="#introduction">Introducción</a>
+        <a href="#climate">Clima</a>
+        <a href="#seasons">Estaciones</a>
+        <a href="#forecast">Pronóstico</a>
     </nav>
     <main>
         <section id="introduction">
             <h2>¡Hola!</h2>
-            <p>Me llamo Pierce y vivo en Irlanda, en Dublín. En primavera nieva y hace mucho frío. En verano hace frío y llueve mucho. En otoño hace frío y llueve. En invierno nieva y hace mucho frío.</p>
+            <p>Me llamo Pierce y vivo en Irlanda, en Dublín. Irlanda es conocida por su hermoso paisaje verde y su clima variable. En este blog, compartiré información sobre el clima en Irlanda, las diferentes estaciones del año y cómo prepararte para las condiciones meteorológicas.</p>
+        </section>
+        <section id="climate">
+            <h2>Clima en Irlanda</h2>
+            <p>El clima de Irlanda es templado y marítimo, lo que significa inviernos suaves y veranos frescos. La lluviosidad es frecuente, especialmente en la costa oeste. Aunque el clima puede ser impredecible, esto contribuye a la exuberante vegetación de la isla.</p>
+            <a class="button" href="https://www.met.ie/climate" target="_blank">Más sobre el clima de Irlanda</a>
+        </section>
+        <section id="seasons">
+            <h2>Estaciones en Irlanda</h2>
+            <p>Irlanda experimenta cuatro estaciones distintas: primavera, verano, otoño e invierno. Cada estación trae su propio conjunto de condiciones climáticas, desde nevadas en invierno hasta días soleados en verano.</p>
+            <a class="button" href="https://www.discoverireland.ie" target="_blank">Explora las estaciones</a>
+        </section>
+        <section id="forecast">
+            <h2>Pronóstico del Tiempo</h2>
+            <p>Mantén actualizado con los últimos pronósticos del tiempo en Irlanda. Ya sea que estés planeando un viaje o simplemente tengas curiosidad sobre el clima, los pronósticos confiables te ayudarán a estar preparado.</p>
+            <a class="button" href="https://www.met.ie/forecasts" target="_blank">Consulta el último pronóstico</a>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Weather in Ireland Blog</p>
+        <p>&copy; 2025 Clima en Irlanda Blog</p>
     </footer>
 </body>
 </html>
