@@ -65,15 +65,6 @@
         .button:hover {
             background-color: #cc3a00;
         }
-        footer {
-            background-color: #ff4b00;
-            color: white;
-            text-align: center;
-            padding: 1.5em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
         .slideshow {
             position: relative;
             max-width: 100%;
@@ -105,9 +96,9 @@
     </nav>
     <main>
         <div class="slideshow">
-            <img class="slides active" src="path-to-your-uploaded-image-1.jpg" alt="Imagen de Irlanda 1">
-            <img class="slides" src="path-to-your-uploaded-image-2.jpg" alt="Imagen de Irlanda 2">
-            <img class="slides" src="path-to-your-uploaded-image-3.jpg" alt="Imagen de Irlanda 3">
+            <img class="slides active" src="/mnt/data/2023-09-02.jpg" alt="Imagen de Irlanda 1">
+            <img class="slides" src="/mnt/data/2024-04-01.jpg" alt="Imagen de Irlanda 2">
+            <img class="slides" src="/mnt/data/licensed-image.jpeg" alt="Imagen de Irlanda 3">
         </div>
         <section id="introduction">
             <h2>¡Hola!</h2>
@@ -129,16 +120,13 @@
             <a class="button" href="https://www.met.ie/forecasts" target="_blank">Consulta el pronóstico</a>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 Blog del Clima en Irlanda</p>
-    </footer>
 
     <script>
         let slideIndex = 0;
         const slides = document.querySelectorAll('.slides');
         
         function showSlides() {
-            slides.forEach((slide, index) => {
+            slides.forEach((slide) => {
                 slide.style.display = 'none';
             });
             slideIndex++;
