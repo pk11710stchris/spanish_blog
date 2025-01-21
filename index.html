@@ -96,7 +96,7 @@
     </nav>
     <main>
         <div class="slideshow">
-            <img class="slides active" src="/mnt/data/2023-09-02.jpg" alt="Imagen de Irlanda 1">
+            <img class="slides" src="/mnt/data/2023-09-02.jpg" alt="Imagen de Irlanda 1">
             <img class="slides" src="/mnt/data/2024-04-01.jpg" alt="Imagen de Irlanda 2">
             <img class="slides" src="/mnt/data/licensed-image.jpeg" alt="Imagen de Irlanda 3">
         </div>
@@ -124,7 +124,7 @@
     <script>
         let slideIndex = 0;
         const slides = document.querySelectorAll('.slides');
-        
+
         function showSlides() {
             slides.forEach((slide) => {
                 slide.style.display = 'none';
@@ -134,8 +134,8 @@
             slides[slideIndex - 1].style.display = 'block';
             setTimeout(showSlides, 3000);
         }
-        
-        showSlides();
+
+        document.addEventListener('DOMContentLoaded', showSlides);
     </script>
 </body>
 </html>
